@@ -44,8 +44,12 @@ data_panen = {
 print("Seluruh Data")
 for lokasi, data in data_panen.items():
     print(f"{lokasi}: Nama Lokasi: {data['nama_lokasi']}, Hasil Panen: {data['hasil_panen']}")
-    
+
 print()
 jumlah_jagung_lokasi2 = data_panen['lokasi2']['hasil_panen']['jagung']
 print(f"Jumlah hasil panen jagung dari lokasi2: {jumlah_jagung_lokasi2}")
+print()
+
+nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
+print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 print()
