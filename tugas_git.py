@@ -64,3 +64,14 @@ print()
 print("Jumlah hasil panen kedelai dari setiap lokasi")
 print(jumlah_kedelai)
 print()
+
+print("Status perhatian tiap lokasi:")
+for lokasi, data in data_panen.items():
+    padi = data['hasil_panen']['padi']
+    jagung = data['hasil_panen']['jagung']
+    nama = data['nama_lokasi']
+    
+    if padi > 1300 or jagung > 800:
+        print(f"Lokasi {nama} memerlukan perhatian khusus (Padi: {padi}, Jagung: {jagung})")
+    else:
+        print(f"Lokasi {nama} dalam kondisi baik (Padi: {padi}, Jagung: {jagung})")
