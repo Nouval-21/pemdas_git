@@ -53,3 +53,14 @@ print()
 nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
 print(f"Nama lokasi dari lokasi3: {nama_lokasi3}")
 print()
+
+jumlah_padi = {lokasi: data['hasil_panen']['padi'] for lokasi, data in data_panen.items()}
+jumlah_kedelai = {lokasi: data['hasil_panen']['kedelai'] for lokasi, data in data_panen.items()}
+
+print("Jumlah hasil panen padi dari setiap lokasi")
+print(jumlah_padi)
+print()
+
+print("Jumlah hasil panen kedelai dari setiap lokasi")
+print(jumlah_kedelai)
+print()
